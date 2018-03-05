@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <p>{{ greeting() }}</p>
+    <ninjas></ninjas>
   </div>
 </template>
 
@@ -9,12 +9,7 @@
 export default {
   data () {
     return {
-      title: 'Your first Vue file!'
-    }
-  },
-  methods: {
-    greeting() {
-      return 'Hello World'
+      title: 'Ninja App'
     }
   }
 }
