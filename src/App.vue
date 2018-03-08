@@ -1,8 +1,8 @@
 <template>
   <div>
-    <app-header></app-header>
+    <app-header :title="title"></app-header>
     <app-ninjas :ninjas="ninjas"></app-ninjas>
-    <app-footer></app-footer>
+    <app-footer :title="title"></app-footer>
   </div>
 </template>
 
@@ -23,7 +23,8 @@ export default {
           { name: 'Ryu', speciality: 'Vue Components', show: false },
           { name: 'Hiroshi', speciality: 'HTML Wizard', show: false },
           { name: 'Yoshi', speciality: 'Data Diggin', show: false }
-      ]
+      ],
+      title: "Vue Ninjas"
     }
   }
 }
